@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html class="responsive">
+  <head>
+    <title>FE Nanodegree Project 1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="xtyle/img/favicon.ico">
+    <link rel="stylesheet" href="/css/xtyle.css"> <!-- Web Framework -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/magnific.css">
+  </head>
+  <body>
+    <!-- MAIN CONTENT -->
+    <main class="layout-fixed-center" role="main">
+      <header class="grid">
+        <div class="grid1">
+          <div class="container">
+            <img width="100px" class="udacity-logo" src="img/udacity_logo.svg" alt="Udacity Logo">
+            <h1 class="lighter">MARIZ MELO</h1>
+            <h5>FRONT-END NINJA</h5>
+          </div>
+        </div>
+      </header>
+      <article class="grid">
+        <!-- MEDALLION -->
+        <div class="banner grid1 padding-top-bottom2x">
+          <div class="container">
+            <a href="https://dribbble.com/shots/2025544-Medallion" alt="Medallion link">
+              <img src="img/medallion.png" alt="Medallion">
+            </a>
+          </div>
+        </div>
+        <!-- FEATURED WORK -->
+        <div class="padding-left2x">
+          <h1 class="featured-work normal">Featured Work</h1>
+        </div>
+        <section class="grid3">
+          <div class="container">
+            <a href="img/npsmonth.png" class="image-popup-no-margins">
+              <img src="img/npsmonth.png" width="80%" alt="NPS by heart">
+            </a>
+            <div class="center padding">
+              <a href="https://dribbble.com/shots/2079981-NPS-by-heart" alt="NPS by heart link">
+                <h2 class="normal">NPS by heart</h2>
+              </a>
+              <span>
+                  Dribble
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="grid3">
+          <div class="container">
+            <a href="img/medalliaapplewatchexplorations.png" class="image-popup-no-margins">
+              <img src="img/medalliaapplewatchexplorations.png" alt="NPS by Month">
+            </a>
+            <div class="center padding">
+              <a href="https://dribbble.com/shots/2026579-Medallia-Apple-Watch-Explorations" alt="Watch Explorations">
+                <h2 class="normal">Watch Explorations</h2>
+              </a>
+              <span>
+                  Dribble
+              </span>
+            </div>
+          </div>
+        </section>
+        <section class="grid3">
+          <div class="container">
+            <a href="img/medallia_vision_personas.png" class="image-popup-no-margins">
+              <img src="img/medallia_vision_personas.png" alt="NPS by Month">
+            </a>
+            <div class="center padding">
+              <a href="https://dribbble.com/shots/1968941-Medallia-Personas" alt="Medallia Personas">
+                <h2 class="normal">Medallia Personas</h2>
+              </a>
+              <span>
+                  Dribble
+              </span>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+    <!-- SCRIPTS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
+    <script>
+      $(function(){
+        $('.image-popup-no-margins').magnificPopup({
+          type: 'image',
+          closeOnContentClick: true,
+          closeBtnInside: false,
+          fixedContentPos: true,
+          mainClass: 'mfp-no-margins mfp-with-zoom', // class to remove default margin from left and right side
+          image: {
+            verticalFit: true
+          },
+          zoom: {
+            enabled: true,
+            duration: 300 // don't foget to change the duration also in CSS
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
